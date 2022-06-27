@@ -100,6 +100,8 @@ Rails.application.configure do
   # config.hosts << "https://ruby-on-rails-swgj19624650.codeanyapp.com/"
   config.hosts << "port-3000-ruby-on-rails-swgj19624650.preview.codeanywhere.com"
 
+  config.action_mailer.default_url_options = { host: 'port-3000-ruby-on-rails-swgj19624650.preview.codeanywhere.com', port: 3000 }
+
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write

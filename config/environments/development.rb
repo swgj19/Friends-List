@@ -77,4 +77,6 @@ Rails.application.configure do
   # To allow requests to port-3000-ruby-on-rails-swgj19624650.preview.codeanywhere.com
   # config.hosts << "https://ruby-on-rails-swgj19624650.codeanyapp.com/"
   config.hosts << "port-3000-ruby-on-rails-swgj19624650.preview.codeanywhere.com"
+
+  config.action_mailer.default_url_options = { host: 'port-3000-ruby-on-rails-swgj19624650.preview.codeanywhere.com', port: 3000 }
 end
