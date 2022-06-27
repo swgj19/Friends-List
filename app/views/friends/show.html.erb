@@ -1,29 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5"><%= @friend.first_name %> <%= @friend.last_name %></h1>
+            <p class="lead">Description goes here.</p>
+            <hr class="my-4">
+                <p>
+                <strong>Email:</strong>
+                <%= @friend.email %>
+                </p>
+                <p>
+                <strong>Phone:</strong>
+                <%= @friend.phone %>
+                </p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @friend.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @friend.last_name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @friend.email %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @friend.phone %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @friend.twitter %>
-</p>
-
-<%= link_to 'Edit', edit_friend_path(@friend) %> |
-<%= link_to 'Back', friends_path %>
+                <p>
+                <strong>Twitter:</strong>
+                <%= @friend.twitter %>
+                </p>
+            <p class="lead">
+                <%= link_to 'Edit', edit_friend_path(@friend), class: 'btn btn-secondary' %>
+                <%= link_to 'Back', friends_path, class: 'btn btn-dark' %>
+            </p>
+        </div>
+    </div>
+</div>
