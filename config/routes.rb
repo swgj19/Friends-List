@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :friends
   #get 'home/index'
   get 'home/about'
+  get '/user' => "friends#index", :as => :user_root
   root 'home#index'
 end
